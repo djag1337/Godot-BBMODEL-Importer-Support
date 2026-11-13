@@ -1,0 +1,15 @@
+name: Feature request
+description: Suggest an import feature or option
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: want
+    attributes: {label: What would you like the importer to do?}
+    validations: {required: true}
+  - type: textarea
+    id: why
+    attributes: {label: What are you making, and why do you need it?}
+    validations: {required: true}
+  - type: input
+    id: workaround
+    attributes: {label: What do you do today instead?}
