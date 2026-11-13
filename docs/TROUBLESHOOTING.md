@@ -10,6 +10,7 @@
 | Edits in Blockbench do not show up | Save the `.bbmodel`, focus the Godot window so it rescans, or press Reimport. If you changed a texture image, reimport the `.bbmodel` too. |
 | Model faces are invisible from one side | *Materials > Sides* to Double Sided. |
 | Concave freeform faces look wrong | Triangulate them in Blockbench (only triangles, quads and convex polygons are supported). |
+| Model mirrored front-to-back, or multi-axis rotated parts misplaced | Set *Geometry > Axis Mode* to Blockbench and Reimport |
 | Scale is wrong | *Geometry > Units Per Meter* (default 16). |
 
 When asking for help include: plugin version, Godot version, OS/GPU, Blockbench version, the import warnings, and (if you can share it) a minimal `.bbmodel` that shows the problem.

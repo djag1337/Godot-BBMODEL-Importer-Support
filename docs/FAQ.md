@@ -17,3 +17,9 @@
 **Does it work in exported games?** Expected to (the plugin is an editor tool and imported scenes are part of the project), but exports have not been tested by the author yet.
 
 **Which Godot versions?** Tested on 4.7.2 only. Reports from other versions are welcome (use the Compatibility report template).
+
+**Can it create collision?** Yes: *Physics > Collision* in the Import tab: boxes per element, a convex hull, or a trimesh. Hidden elements are ignored.
+
+**What happens to Blockbench locators?** They become `Marker3D` nodes with the locator's name, position and rotation, handy for hold points or attachments.
+
+**My model looks mirrored or its rotated parts are in the wrong place.** Use the default *Axis Mode = Blockbench*. *Legacy (mirrored Z)* exists only to reproduce older pre-release output.
