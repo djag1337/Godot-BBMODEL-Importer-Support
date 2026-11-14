@@ -2,9 +2,9 @@
 
 **Do I need Blockbench installed?** No. The plugin reads `.bbmodel` files itself.
 
-**Does it import animations?** No. Animation data in the file is ignored; the model's geometry still imports.
+**Does it import animations?** Yes. Blockbench animations become an `AnimationPlayer` with one animation per Blockbench animation (position, rotation and scale; linear, step, Catmull-Rom and Bezier interpolation; loop modes). A `RESET` animation holds the rest pose. Sound/particle (effect) keyframes are skipped with a warning, and animated models are not mesh-merged. Only synthetic test animations were tested so far, so please report any model whose animation looks wrong.
 
-**Does it import bones, locators or display settings?** No.
+**Does it import armatures (bones), display settings or texture animation?** No. Blockbench groups animate as ordinary nodes; armature bones are not supported.
 
 **Why is my model one mesh instead of many nodes?** *Merge Meshes* is on by default. Turn it off in the Import tab and reimport to keep one node per element.
 

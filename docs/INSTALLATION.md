@@ -14,6 +14,8 @@ Import options: click the `.bbmodel` in the FileSystem dock, open the **Import**
 | Geometry > Merge Meshes | on | One mesh per material. Turn off to keep every Blockbench element as a separate node |
 | Geometry > Axis Mode | Blockbench | Keeps Blockbench's axes and its ZYX rotation order. *Legacy (mirrored Z)* reproduces the output of pre-release builds |
 | Physics > Collision | None | Adds a `BBModelCollision` StaticBody3D: one box per element, a convex hull of the whole model, or a trimesh |
+| Animation > Import | on | Imports Blockbench animations into an `AnimationPlayer`. Animated models are not mesh-merged |
+| Animation > FPS | 30 | Sampling rate for rotation and curved channels |
 | Nodes > Locators | on | Blockbench locators and null objects become `Marker3D` nodes (hold points, attachments) |
 | Materials > Texture Filter | Nearest | Nearest or Linear (both with mipmaps) |
 | Materials > Sides | Auto | Auto follows Blockbench's render-sides; or Front Only / Double Sided |

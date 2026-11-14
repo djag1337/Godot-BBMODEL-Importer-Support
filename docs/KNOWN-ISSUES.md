@@ -1,6 +1,7 @@
 # Known issues and limits (version 1.1.0, unreleased)
 
-* No animations, bones, locators, display transforms, collections or constraints (ignored).
+* Animations: position, rotation and scale channels are imported. Effect (sound/particle/timeline) keyframes, armature bones, texture animation, formats that use quaternion rotation interpolation, loop-wrapped interpolation and Molang beyond a small subset (`math.sin/cos/abs/sqrt/clamp/min/max/lerp/floor/ceil/round`, `query.anim_time`) are not supported. Rotations are sampled (default 30 fps). Only synthetic animations have been tested.
+* Display transforms, collections and constraints are ignored.
 * Box-UV-only cubes (no saved per-face UV rectangles) are not mapped from `uv_offset`: the faces get full-texture UVs and **no warning is shown**.
 * Freeform mesh faces use fan triangulation: only triangles, quads and convex polygons are reliable.
 * Alpha textures use alpha scissor (hard edge at 0.5), not smooth blending.

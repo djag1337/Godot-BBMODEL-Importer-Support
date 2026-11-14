@@ -11,6 +11,7 @@
 | Model faces are invisible from one side | *Materials > Sides* to Double Sided. |
 | Concave freeform faces look wrong | Triangulate them in Blockbench (only triangles, quads and convex polygons are supported). |
 | Model mirrored front-to-back, or multi-axis rotated parts misplaced | Set *Geometry > Axis Mode* to Blockbench and Reimport |
+| An animation looks wrong | Check the import warnings (Molang, effect keyframes). Set *Animation > FPS* higher for fast rotations. Please report it with the `.bbmodel` |
 | Scale is wrong | *Geometry > Units Per Meter* (default 16). |
 
 When asking for help include: plugin version, Godot version, OS/GPU, Blockbench version, the import warnings, and (if you can share it) a minimal `.bbmodel` that shows the problem.
