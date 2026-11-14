@@ -1,1 +1,5 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Quick question or help
+    url: https://djagdev.itch.io/blockbench-bbmodel-importer-for-godot-4
+    about: For quick questions, use the comments on the itch.io page (primary support channel).

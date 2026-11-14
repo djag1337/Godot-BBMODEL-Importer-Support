@@ -1,6 +1,6 @@
 # Installation
 
-1. Download the plugin zip (link at release) and unzip it.
+1. Download the plugin zip from the [itch.io page](https://djagdev.itch.io/blockbench-bbmodel-importer-for-godot-4) and unzip it.
 2. Copy the folder `addons/bbmodel_importer` into your project's `addons` folder (create `addons` if needed).
 3. In Godot: **Project > Project Settings > Plugins**, tick **Enable** next to *Blockbench BBModel Importer*.
 4. Put a `.bbmodel` file anywhere in your project. Godot imports it automatically and it appears in the FileSystem dock as a scene.
