@@ -2,7 +2,7 @@
 
 * Animations: position, rotation and scale channels are imported. Effect (sound/particle/timeline) keyframes, armature bones, texture animation, formats that use quaternion rotation interpolation, loop-wrapped interpolation and Molang beyond a small subset (`math.sin/cos/abs/sqrt/clamp/min/max/lerp/floor/ceil/round`, `query.anim_time`) are not supported. Rotations are sampled (default 30 fps). Only synthetic animations have been tested.
 * Display transforms, collections and constraints are ignored.
-* Box-UV-only cubes (no saved per-face UV rectangles) are not mapped from `uv_offset`: the faces get full-texture UVs and **no warning is shown**.
+* Billboards: Blockbench's "look at" and "rotate" facing modes both map to Godot's Enabled billboard (a small perspective difference); "look at Y" and "rotate Y" map to Fixed Y. Billboards are not merged and get no collision.
 * Freeform mesh faces use fan triangulation: only triangles, quads and convex polygons are reliable.
 * Alpha textures use alpha scissor (hard edge at 0.5), not smooth blending.
 * Texture tint, emissive/PBR maps and cube stretch/rescale are not imported.

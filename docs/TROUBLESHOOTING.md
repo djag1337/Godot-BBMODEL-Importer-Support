@@ -5,7 +5,7 @@
 | `.bbmodel` files show no scene icon / nothing imports | Is the plugin enabled (Project Settings > Plugins)? Then Project > Reload Current Project. |
 | "No loader found for resource ...bbmodel" in the Output | The plugin is not enabled, or the editor has not finished importing. Enable it and wait for the import progress bar. |
 | Output says `Texture '...' is missing` | Put the PNG/JPEG/WebP next to the model or in `Textures/`, then Reimport. |
-| Textures have the wrong UV mapping | The model may use Blockbench "Box UV" without saved per-face UVs. Not supported yet: in Blockbench switch the model to per-face UV, save, reimport. |
+| Textures look mirrored or rotated | Please report it with the `.bbmodel`: the importer follows Blockbench's UV rules (including Box UV and face rotation) and this should not happen. Check *Geometry > Axis Mode* is Blockbench |
 | Parts that should move are merged | Turn off *Geometry > Merge Meshes* and Reimport. |
 | Edits in Blockbench do not show up | Save the `.bbmodel`, focus the Godot window so it rescans, or press Reimport. If you changed a texture image, reimport the `.bbmodel` too. |
 | Model faces are invisible from one side | *Materials > Sides* to Double Sided. |
